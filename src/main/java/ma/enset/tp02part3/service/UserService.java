@@ -1,0 +1,14 @@
+package ma.enset.tp02part3.service;
+
+import ma.enset.tp02part3.entities.Role;
+import ma.enset.tp02part3.entities.User;
+
+public interface UserService {
+    User addNewUser(User user);
+    Role addNewRole(Role role);
+    User findUserByUserName(String userName);
+    Role findRoleByRoleName(String roleName);
+    void addRoleToUser(String userName,String roleName);
+    User authentificate(String userName,String password);
+}
+
